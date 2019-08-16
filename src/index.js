@@ -69,13 +69,12 @@ class D {
     const monthDifference = currentDate.getMonth() - this.getMonth();
     const dayDifference = currentDate.getDay() - this.day();
     if (this.date < currentDate) {
-      return `This date was: ${yearDifference} years, ${monthDifference} months, and ${dayDifference} days ago`;
+      return `Year difference: ${yearDifference}, Month Difference: ${monthDifference}, Day Difference ${dayDifference}`;
     }
     return `This date is: ${Math.abs(yearDifference)} years, ${Math.abs(
       monthDifference
-    )} months, and ${Math.abs(dayDifference)} days into the future`;
+    )} months, and ${Math.abs(dayDifference)} diffrent thn the original date`;
   }
 }
 
-export default D;
-s;
+module.exports = D;
